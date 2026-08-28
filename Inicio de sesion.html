@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase a Clase | Universidad de San Buenaventura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+  <main class="login-page">
+    <section class="login-side">
+      <img src="logo-usbb.png" class="login-logo" alt="Logo Universidad de San Buenaventura">
+
+      <div class="login-text">
+        <p class="eyebrow">PLATAFORMA ACADÉMICA</p>
+        <h1>Clase a <em>Clase</em></h1>
+        <p>Organiza tus cursos y realiza la planeación académica semana por semana desde una sola plataforma.</p>
+
+        <div class="login-list">
+          <div>Crea y administra tus propios cursos</div>
+          <div>Planea las 17 semanas de cada asignatura</div>
+          <div>Consulta y actualiza la información cuando lo necesites</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-form">
+      <div>
+        <img src="logo-usbb.png" class="login-logo" alt="Logo USB">
+
+        <div id="loginView">
+          <p class="eyebrow">ACCESO A LA PLATAFORMA</p>
+          <h2>Bienvenido</h2>
+          <p class="auth-title">Inicia sesión con tu cuenta para administrar tus cursos.</p>
+
+          <form id="loginForm">
+            <label for="loginEmail">Correo electrónico</label>
+            <input id="loginEmail" type="email" placeholder="correo@ejemplo.com">
+            <small id="loginEmailError"></small>
+
+            <label for="loginPassword">Contraseña</label>
+            <div class="pass">
+              <input id="loginPassword" type="password" placeholder="Ingresa tu contraseña">
+              <button type="button" class="show-password" data-target="loginPassword">Ver</button>
+            </div>
+            <small id="loginPasswordError"></small>
+
+            <div class="login-links">
+              <button type="button" class="link-btn" id="forgotBtn">¿Olvidaste tu contraseña?</button>
+              <button type="button" class="link-btn" id="registerBtn">Crear una cuenta nueva</button>
+            </div>
+
+            <div id="loginMessage" class="form-message"></div>
+            <button class="primary" type="submit">Iniciar sesión</button>
+          </form>
+        </div>
+
+        <div id="registerView" class="hidden">
+          <p class="eyebrow">REGISTRO DE USUARIO</p>
+          <h2>Crear cuenta</h2>
+          <p class="auth-title">Registra tus datos para acceder posteriormente a la plataforma.</p>
+
+          <form id="registerForm">
+            <label for="registerName">Nombre completo</label>
+            <input id="registerName" type="text" placeholder="Tu nombre completo">
+            <small id="registerNameError"></small>
+
+            <label for="registerEmail">Correo electrónico</label>
+            <input id="registerEmail" type="email" placeholder="correo@ejemplo.com">
+            <small id="registerEmailError"></small>
+
+            <label for="registerPassword">Contraseña</label>
+            <div class="pass">
+              <input id="registerPassword" type="password" placeholder="Mínimo 4 caracteres">
+              <button type="button" class="show-password" data-target="registerPassword">Ver</button>
+            </div>
+            <small id="registerPasswordError"></small>
+
+            <label for="confirmPassword">Confirmar contraseña</label>
+            <input id="confirmPassword" type="password" placeholder="Repite tu contraseña">
+            <small id="confirmPasswordError"></small>
+
+            <div id="registerMessage" class="form-message"></div>
+            <button class="primary" type="submit">Registrar usuario</button>
+            <button type="button" class="link-btn" id="backToLogin">Ya tengo una cuenta</button>
+          </form>
+        </div>
+
+        <div id="forgotView" class="hidden">
+          <p class="eyebrow">RECUPERACIÓN DE ACCESO</p>
+          <h2>Restablecer contraseña</h2>
+          <p class="auth-title">Ingresa el correo con el que creaste tu cuenta.</p>
+
+          <form id="forgotForm">
+            <label for="forgotEmail">Correo electrónico</label>
+            <input id="forgotEmail" type="email" placeholder="correo@ejemplo.com">
+            <small id="forgotEmailError"></small>
+
+            <div id="forgotMessage" class="form-message"></div>
+            <button class="primary" type="submit">Restablecer contraseña</button>
+            <button type="button" class="link-btn" id="backLoginForgot">Volver al inicio de sesión</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
