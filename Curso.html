@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso | Clase a Clase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="logo-usbb.png" alt="Logo Universidad de San Buenaventura">
+    </a>
+
+    <button id="menuToggle" class="hamb" aria-label="Abrir menú">☰</button>
+
+    <nav id="nav">
+      <a href="index.html">Mis cursos</a>
+      <a href="#weeks">Semanas</a>
+      <a href="#" id="logoutBtn">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <section class="course-hero">
+    <div>
+      <p class="eyebrow">PLANEACIÓN ACADÉMICA</p>
+      <h1 id="courseTitle">Mi curso</h1>
+      <p id="courseMeta"></p>
+
+      <div class="course-progress">
+        <span>Planeación completada: <b id="completed">0</b>/17</span>
+        <div><i id="progress"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="weeks" class="content">
+    <section class="academic-panel">
+      <div id="courseInfo" class="info-grid"></div>
+      <div class="ra-box">
+        <h3>Resultados de Aprendizaje</h3>
+        <ol id="raList"></ol>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <p class="eyebrow">NAVEGACIÓN CURRICULAR</p>
+      <h2>Unidades temáticas</h2>
+      <p>Selecciona una unidad para saltar directamente a la planeación correspondiente.</p>
+      <div id="unitNav" class="unit-nav"></div>
+    </div>
+
+    <div class="section-head">
+      <p class="eyebrow">CRONOGRAMA DEL CURSO</p>
+      <h2>Planeación semana por semana</h2>
+      <p>Haz clic en una semana para desplegar su información. Las semanas 6, 11 y 17 están destacadas como hitos de evaluación.</p>
+    </div>
+
+    <div id="weeksList" class="accordion"></div>
+  </section>
+
+  <div id="weekModal" class="modal">
+    <div class="modal-box large">
+      <button class="close" aria-label="Cerrar">×</button>
+      <p class="eyebrow">GESTIONAR PLANEACIÓN</p>
+      <h2 id="weekTitle"></h2>
+
+      <form id="weekForm">
+        <input type="hidden" id="week">
+
+        <div class="two">
+          <div>
+            <label for="month">Mes</label>
+            <input id="month" placeholder="Ejemplo: 02">
+          </div>
+          <div>
+            <label for="day">Día</label>
+            <input id="day" placeholder="Ejemplo: 04">
+          </div>
+        </div>
+
+        <label for="unit">Unidad temática</label>
+        <select id="unit"></select>
+
+        <label for="directHours">Horas de trabajo directo</label>
+        <input id="directHours" type="number" min="0">
+
+        <label for="topic">Tema de la clase *</label>
+        <input id="topic" required placeholder="Ejemplo: Límites y continuidad">
+
+        <label for="objective">Objetivo *</label>
+        <textarea id="objective" required></textarea>
+
+        <label for="content">Contenido desarrollado *</label>
+        <textarea id="content" required></textarea>
+
+        <label for="methodology">Metodología</label>
+        <textarea id="methodology"></textarea>
+
+        <label for="activity">Actividad o evaluación</label>
+        <textarea id="activity"></textarea>
+
+        <label for="resources">Recursos y materiales</label>
+        <textarea id="resources"></textarea>
+
+        <label for="observations">Observaciones</label>
+        <textarea id="observations"></textarea>
+
+        <div class="actions spread">
+          <button type="button" id="deleteWeek" class="danger">Eliminar información</button>
+          <button type="submit" class="primary">Guardar semana</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="methodologyModal" class="modal">
+    <div class="modal-box">
+      <button class="close" aria-label="Cerrar">×</button>
+      <p class="eyebrow">METODOLOGÍA DE ENSEÑANZA</p>
+      <h2 id="methodologyTitle"></h2>
+      <p id="methodologyText" class="methodology-text"></p>
+    </div>
+  </div>
+
+  <div id="logoutModal" class="modal">
+    <div class="modal-box confirm-box">
+      <p class="eyebrow">CERRAR SESIÓN</p>
+      <h2>¿Estás seguro?</h2>
+      <p>Si cierras sesión tendrás que iniciar nuevamente con tu cuenta para continuar.</p>
+      <div class="confirm-actions">
+        <button class="cancel" id="cancelLogout">Cancelar</button>
+        <button class="primary" id="confirmLogout">Cerrar sesión</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 Universidad de San Buenaventura · Clase a Clase</footer>
+  <script src="app.js"></script>
+</body>
+</html>
