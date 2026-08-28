@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90">
+<rect width="220" height="90" rx="10" fill="#ffffff"/>
+<path d="M18 68V24h42c15 0 24 8 24 20 0 8-5 14-12 17l16 7H62L48 62H37v6H18zm19-22h20c5 0 8-3 8-7s-3-7-8-7H37v14z" fill="#1A171B"/>
+<path d="M100 24h18v27c0 8 4 12 12 12s12-4 12-12V24h18v29c0 18-12 27-30 27s-30-9-30-27V24z" fill="#EB8600"/>
+<text x="170" y="50" font-family="Arial" font-size="13" font-weight="700" fill="#1A171B">USB</text>
+<text x="170" y="66" font-family="Arial" font-size="8" fill="#555">Cartagena</text>
+</svg>
