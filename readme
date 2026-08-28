@@ -1,0 +1,27 @@
+CLASE A CLASE USB - VERSIÓN 6
+
+Esta versión incorpora los requisitos que faltaban según los documentos del parcial y de la aplicación Clase a Clase.
+
+NUEVO:
+- Registro e inicio de sesión con correo institucional USB.
+- Datos completos del curso: facultad, programa, código, semestre, créditos y periodo.
+- Horas de trabajo presencial e independiente.
+- Nombre y correo institucional del profesor.
+- Tres Resultados de Aprendizaje (RA).
+- Seis unidades temáticas configurables por curso.
+- Navegación directa por unidades temáticas.
+- Mes y día de cada semana.
+- Horas de trabajo directo por semana.
+- Semanas 6, 11 y 17 destacadas como Primer Parcial, Segundo Parcial y Examen Final.
+- Semana 17 con 0 horas directas por defecto.
+- Modal específico para consultar la metodología de enseñanza.
+- Se mantienen: menú hamburguesa, modales, acordeón, validación, registro, recuperación de contraseña y confirmación de cierre de sesión.
+
+PARA INICIAR:
+1. Abre inicio_sesion.html
+2. Registra un usuario con correo @usbctg.edu.co o @usb.edu.co
+3. Inicia sesión.
+4. Crea y administra tus propios cursos.
+
+NOTA:
+Este proyecto es frontend y usa localStorage/sessionStorage. Las cuentas y datos quedan guardados en el navegador utilizado.
